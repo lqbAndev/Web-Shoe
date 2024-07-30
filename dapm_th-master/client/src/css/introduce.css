@@ -1,0 +1,104 @@
+.my-introduce {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr 1fr;
+    gap: 10px;
+}
+
+.introduce__item {
+    width: 100%;
+    height: 200px;
+    background-image: url('https://cdn.wallpapersafari.com/88/47/9Rjxe6.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 5px;
+}
+
+.introduce__item:first-child {
+    grid-column: 1 / 3; 
+    background-image: url('https://media.about.nike.com/images/b196703f-f105-41d7-9542-e75de08ad2bc/nike-zoomx-vaporfly-next3fk-proto-secondary-01.jpg?fm=jpg&q=80&fit=max&crop=3000%2C2001%2C0%2C0&w=3840');
+    background-size: cover;
+}
+
+.introduce__item:nth-child(2) {
+    background-image: url('https://media.about.nike.com/images/cb1bd775-dff1-419b-9b12-e3da8268198f/nikenews-nikesb-tokyo-skateboarding-federationkits-1-102972.jpg?fm=jpg&q=80&fit=max&crop=1600%2C1067%2C0%2C0&w=3840');
+}
+
+.introduce__item:nth-child(3) {
+    background-image: url('https://images.vans.com/is/image/VansBrand/HO23_Sept_Lowland_hp_secondary_womens_knee?$fullres$');
+}
+
+.introduce__item:nth-child(4) {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    margin: auto 0;
+    position: relative;
+    height: 300px;
+    background-size: cover;
+    background-image: url('https://media.about.nike.com/images/66566382-d4b8-49d2-8488-1316dfe03f05/su22-prday-nyc-static-product-2-master-109111.jpg?fm=jpg&q=80&fit=max&crop=1600%2C1075%2C0%2C0&w=3840');
+}
+
+
+.introduce__item:nth-child(6) {
+    background-image: url('https://th.bing.com/th/id/R.aea5d309aa8257874390b8a02c11c278?rik=sFnfbGaCEHv%2fIg&riu=http%3a%2f%2f4.bp.blogspot.com%2f-h-6J_5KaXBQ%2fUQvodsan--I%2fAAAAAAAAAMI%2f2SKJ4hQaivg%2fs1600%2fnike_logo_black_wallpaper-normal.jpg&ehk=H252PGBlXQ%2ffTzoCGaFvbmXImOePInn6WVCakEh3mh4%3d&risl=&pid=ImgRaw&r=0');
+}
+
+.introduce__item:nth-child(7) {
+    background-image: url('https://i.ytimg.com/vi/UHKE2eVV5zM/hqdefault.jpg');
+}
+
+.introduce__item:nth-child(8) {
+    background-image: url('https://w0.peakpx.com/wallpaper/954/24/HD-wallpaper-vans-logo-van-thumbnail.jpg');
+}
+
+/* .introduce__item:nth-child(4)::after {
+    content: '';
+    position: absolute;
+    display: block;
+    right: -32%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 400px;
+    height: 230px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.7);
+    border-radius: 5px;
+} */
+
+.sub {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    transition: .5s linear;
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.introduce__item:hover .sub {
+    opacity: 1;
+}
+.introduce__sub {
+    padding: 24px;
+    position: absolute;
+    right: -30%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 400px;
+    height: 230px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.7);
+    border-radius: 5px;
+}
+
+.introduce__item:nth-child(5) {
+    grid-column: 1 / 1;
+    background-image: url('https://i.pinimg.com/originals/58/c4/ea/58c4ea424af70f8d351a513a2f5af6de.jpg');
+}
